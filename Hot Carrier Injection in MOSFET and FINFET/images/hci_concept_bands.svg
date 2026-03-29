@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="40" y="45" font-size="28" font-family="Arial">Hot Carrier Injection Concept (near drain edge)</text>
+  <line x1="80" y1="430" x2="830" y2="430" stroke="black" stroke-width="2"/>
+  <line x1="80" y1="90" x2="80" y2="430" stroke="black" stroke-width="2"/>
+  <text x="300" y="485" font-size="20" font-family="Arial">Channel position (source → drain)</text>
+  <text x="10" y="70" font-size="18" font-family="Arial" transform="rotate(-90 24 70)">Relative energy</text>
+  <path d="M90 180 C 250 190, 460 220, 650 250 C 750 255, 790 220, 820 145" stroke="#1769aa" fill="none" stroke-width="4"/>
+  <path d="M90 320 C 250 330, 460 360, 650 390 C 750 395, 790 360, 820 285" stroke="#2e7d32" fill="none" stroke-width="4"/>
+  <rect x="790" y="140" width="40" height="180" fill="#ffcc80" opacity="0.7"/>
+  <text x="742" y="128" font-size="16" font-family="Arial">Gate oxide barrier</text>
+  <line x1="600" y1="120" x2="760" y2="190" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="500" y="112" font-size="16" font-family="Arial">High-field region near drain</text>
+  <line x1="530" y1="285" x2="700" y2="245" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="430" y="300" font-size="16" font-family="Arial">Hot electrons</text>
+  <text x="115" y="170" font-size="16" font-family="Arial" fill="#1769aa">Conduction band (Ec)</text>
+  <text x="115" y="342" font-size="16" font-family="Arial" fill="#2e7d32">Valence band (Ev)</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#444"/>
+    </marker>
+  </defs>
+</svg>

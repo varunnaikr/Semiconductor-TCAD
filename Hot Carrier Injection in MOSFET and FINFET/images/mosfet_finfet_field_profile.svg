@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="40" y="45" font-size="28" font-family="Arial">Illustrative Lateral Electric Field Along Channel</text>
+  <line x1="90" y1="430" x2="840" y2="430" stroke="black" stroke-width="2"/>
+  <line x1="90" y1="90" x2="90" y2="430" stroke="black" stroke-width="2"/>
+  <text x="300" y="485" font-size="20" font-family="Arial">Normalized channel position</text>
+  <text x="10" y="75" font-size="18" font-family="Arial" transform="rotate(-90 26 75)">Electric field (normalized)</text>
+  <polyline points="110,355 220,350 330,340 440,320 550,285 660,220 730,140 790,210 830,300" fill="none" stroke="#6a1b9a" stroke-width="4"/>
+  <polyline points="110,360 220,356 330,348 440,334 550,305 660,255 730,200 790,240 830,305" fill="none" stroke="#00897b" stroke-width="4"/>
+  <text x="645" y="130" font-size="16" font-family="Arial" fill="#6a1b9a">Planar MOSFET</text>
+  <text x="645" y="192" font-size="16" font-family="Arial" fill="#00897b">FinFET</text>
+</svg>
