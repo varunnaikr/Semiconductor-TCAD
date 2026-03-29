@@ -1,0 +1,20 @@
+Physics {
+  BandGap = 1.12
+  ElectronAffinity = 4.05
+  Permittivity = 11.7
+}
+
+Mobility {
+  Parameters = (1.43e3, 2.33e17, 6.43e20, 2.0e20)
+}
+
+Recombination {
+    TauElectron = 1e-6
+    TauHole = 1e-6
+}
+
+ImpactIonization {
+  Parameters = (8.15e5, 1.68, 1.0e6, 1.0)
+}
+
+
