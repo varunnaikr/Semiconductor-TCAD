@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="40" y="45" font-size="28" font-family="Arial">Illustrative HCI Degradation Under Stress</text>
+  <line x1="90" y1="430" x2="840" y2="430" stroke="black" stroke-width="2"/>
+  <line x1="90" y1="90" x2="90" y2="430" stroke="black" stroke-width="2"/>
+  <text x="330" y="485" font-size="20" font-family="Arial">Stress time (log scale)</text>
+  <text x="10" y="75" font-size="18" font-family="Arial" transform="rotate(-90 26 75)">Normalized Idsat (%)</text>
+  <polyline points="120,150 240,175 360,205 480,235 600,265 720,295 820,320" fill="none" stroke="#c62828" stroke-width="4"/>
+  <polyline points="120,150 240,168 360,188 480,210 600,232 720,252 820,270" fill="none" stroke="#1565c0" stroke-width="4"/>
+  <text x="640" y="336" font-size="16" font-family="Arial" fill="#c62828">Planar MOSFET (example)</text>
+  <text x="640" y="286" font-size="16" font-family="Arial" fill="#1565c0">FinFET (example)</text>
+</svg>
