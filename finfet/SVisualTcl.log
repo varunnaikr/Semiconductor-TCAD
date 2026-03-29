@@ -1,0 +1,32 @@
+###########################################
+# Sentaurus Visual X-2025.09.
+# Tcl log file.
+#------------------------------------------
+# Date: Nov 30, 2025. 23:25:20.
+# Version: 2025.09.10041611
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: iiitdwd.ac.in.
+# Machine: Linux, x86_64, linux64.
+# Kernel: 4.18.0-305.el8.x86_64.
+###########################################
+
+load_file /home/23bec061/semiconductor/semi/finfet/finfet_hci_msh.tdr -fod
+create_plot -dataset finfet_hci_msh
+select_plots {Plot_finfet_hci_msh}
+#-> Plot_finfet_hci_msh
+#-> Plot_finfet_hci_msh
+#-> finfet_hci_msh
+create_cutplane -plot Plot_finfet_hci_msh -type x -at 0.076809
+#-> C1(finfet_hci_msh)
+create_plot -dataset C1(finfet_hci_msh) -ref_plot Plot_finfet_hci_msh
+select_plots {Plot_C1(finfet_hci_msh)}
+#-> Plot_C1(finfet_hci_msh)
+#-> Plot_C1(finfet_hci_msh)
+select_plots {Plot_finfet_hci_msh}
+#-> Plot_finfet_hci_msh
+select_plots {Plot_C1(finfet_hci_msh)}
+#-> Plot_C1(finfet_hci_msh)
+select_plots {Plot_finfet_hci_msh}
+#-> Plot_finfet_hci_msh
+exit 0

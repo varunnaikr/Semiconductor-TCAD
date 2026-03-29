@@ -1,0 +1,138 @@
+
+===============================  brep quality  ===================================
+minAngle: 0.971022  [near (0.059 0.015 0.026)]
+maxAngle: 165.735  [near (0.059 0.015 0.037)]
+minDihedralAngle: 90  [near (0.059 0.015 0.027),(0.059 0.015 0.026)] at region=gate_oxide_top
+nVerts = 44  nTris = 112  nRegs = 9
+bmin: -0 -0.05 -0
+bmax: 0.15 0.055 0.037
+min edgeLength: 0.001  [near (0.059 0.015 0.0105)]
+min area: 1.6e-05  max area: 0.00375  total area: 0.065194 interface area: 0.014824
+volume: 0.00047891
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+** Generating 3d grid **
+
+
+===============================  brep quality  ===================================
+minAngle: 0.971022  [near (0.059 0.015 0.026)]
+maxAngle: 165.735  [near (0.059 0.015 0.037)]
+minDihedralAngle: 90  [near (0.059 0.015 0.027),(0.059 0.015 0.026)] at region=gate_oxide_top
+nVerts = 44  nTris = 112  nRegs = 9
+bmin: -0 -0.05 -0
+bmax: 0.15 0.055 0.037
+min edgeLength: 0.001  [near (0.059 0.015 0.0105)]
+min area: 1.6e-05  max area: 0.00375  total area: 0.065194 interface area: 0.014824
+volume: 0.00047891
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+Creating binary tree...done.
+Smoothing out binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+===============================  brep quality  ===================================
+minAngle: 0.190985  [near (0.075 0.015 0.011)]
+maxAngle: 152.287  [near (0.065625 0.015 0.0289062)]
+minDihedralAngle: 90  [near (0.15 0.02875 0.011),(0.15 0.0303906 0.011)] at region=drain
+nVerts = 5724  nTris = 12002  nRegs = 9
+bmin: 0 -0.05 0
+bmax: 0.15 0.055 0.037
+min edgeLength: 1.5625e-05  [near (0.0609375 0.055 0.0109922)]
+min area: 4.88281e-09  max area: 4.33594e-05  total area: 0.065194 interface area: 0.014824
+volume: 0.00047891
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+Number of vertices after binary tree generation : 
+  14729 (tree) + 5724 (boundary)
+
+** Delaunizing the mesh **
+
+Creating delaunizer input...
+===============================  brep quality  ===================================
+minAngle: 0.190985  [near (0.075 0.015 0.011)]
+maxAngle: 152.287  [near (0.065625 0.015 0.0289062)]
+minDihedralAngle: 90  [near (0.15 0.02875 0.011),(0.15 0.0303906 0.011)] at region=drain
+nVerts = 5724  nTris = 12002  nRegs = 9
+bmin: 0 -0.05 0
+bmax: 0.15 0.055 0.037
+min edgeLength: 1.5625e-05  [near (0.0609375 0.055 0.0109922)]
+min area: 4.88281e-09  max area: 4.33594e-05  total area: 0.065194 interface area: 0.014824
+volume: 0.00047891
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+done.
+Building a generic Delaunay triangulation of the 15739 input vertices ...done.
+Setting up planar patches...done.
+Initializing protection spheres...done.
+Flipping edges...done. (15747 vertices, 92712 elements)
+Solving ridges...done. (16231 vertices, 95394 elements)
+Solving faces...done. (16328 vertices, 95837 elements)
+Optimizing elements...done. (16328 vertices)
+Max. connectivity = 155 located at (0.01875;0.015;0)
+Eliminating slivers...done.(172.99deg 3.7e-08um^2)
+8 slivers removed 
+Slivers remaining = 0
+Max. connectivity = 155 located at (0.01875;0.015;0)
+
+============================Report Non-Delaunay elements ============================
+Found 0 non-Delaunay elements
+Found 0 non-Delaunay boundary faces
+Found 0 non-Delaunay ridges
+==================================================================================
+
+Assign regions...done.
+Store Delaunay weight.
+
+The final mesh has: 
+   16320 points.
+   85233 elements.
+       9 regions.
+Max. connectivity = 58 located at (0.0609375;0.0533594;0.011)
+
+Smallest region: gate_oxide_bottom  Total volume: 1.28e-06
+        MeshGen3DNew::getDelaunizerInput:      2.31s
+                 MeshGen3DNew::delaunize:      1.11s
+
+==============================  tet-grid quality  ================================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    1   4   6   6   4   4   7   9   9  42   4   2   1  .   .   .   .   . 
+---------------------------------------------------------------------------------
+minAngle: 0.190926  maxAngle: 172.988
+nVerts = 16320  nTets = 85233  nMats = 9
+max connectivity (tets per node): 58 [near (0.0609375 0.0533594 0.011)]
+bmin: 0 -0.05 0
+bmax: 0.15 0.055 0.037
+min edgeLength: 1.5625e-05  [near (0.0569375 0.0144922 0.0109883)]
+min volume: 3.15348e-12  max volume: 9.48486e-08  Total volume: 0.00047891
+bbox  volume: 0.00058275
+Are all boundaries on bbox? false
+=================================================================================
+
+Smallest region: gate_oxide_bottom  Total volume: 1.28e-06
+Interpolating data...done.
+Adding region interfaces...done
+
+===============================  Timer Report===================================
+              Total Mesh Generation Time:      7.42s       100%
+                       Rate of #Vertices:   2.2e+03
+                          Rate of #Edges:         0
+                          Rate of #Faces:  1.11e+03
+                       Rate of #Elements:  1.15e+04
+
+                              BinaryTree:       2.8s      37.8%
+                                 Imprint:     0.798s      10.7%
+                           DelaunayInput:       1.8s      24.3%
+                          InsertVertices:     0.506s      6.81%
+                              Delaunizer:     0.215s      2.89%
+                        SphereProtection:    0.0607s     0.818%
+                        SolveConstraints:     0.472s      6.35%
+                        OptimizeElements:   0.00261s    0.0352%
+                          Sliver Remover:     0.165s      2.23%
+                          Assign Regions:     0.197s      2.66%
+                            Time Covered:      7.02s      94.6%
+

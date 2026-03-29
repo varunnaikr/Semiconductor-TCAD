@@ -1,0 +1,100 @@
+Physics {
+  Material = "Silicon" {
+    Mobility(
+      DopingDependence(
+        mumax.electrons = 1450.0
+        mumax.holes = 505.0
+        nref = 1.3e17
+        pref = 2.35e17
+        alpha = 0.88
+      )
+      HighFieldSaturation(
+        vsatmin.electrons = 7.0e6
+        vsatmin.holes = 6.2e6
+        vsat300 = 1.0e7
+        tnom = 300.0
+      )
+    )
+    
+    Recombination(
+      SRH(
+        DopingDependence(
+          tau.min.electrons = 1.0e-10
+          tau.min.holes = 1.0e-10
+          tau.exponent = 2.5
+          n_ref = 1.0e16
+          p_ref = 1.0e16
+        )
+      )
+      Auger(
+        cn = 2.8e-31
+        cp = 9.9e-32
+      )
+    )
+    
+    ImpactIonization(
+      Chynoweth(
+        ln.a = 7.03e5
+        ln.b = 1.231e6
+        lp.a = 7.03e5
+        lp.b = 1.231e6
+        Tnom = 300.0
+      )
+    )
+    
+    Bandgap(
+      EgRef = 1.166
+      EgX = -2.73e-4
+      EgY = 636.0
+      XiRef = 4.73
+    )
+    
+    Traps(
+      (
+        Acceptor
+        Conc = 1.0e12
+        Eenergy = 0.235
+        Esigma = 0.1
+        Hsigma = 1.0e-14
+        Esigma = 1.0e-14
+      )
+    )
+  }
+  
+  Material = "SiO2" {
+    Bandgap(
+      EgRef = 8.9
+      EgX = 0.0
+      EgY = 0.0
+    )
+  }
+  
+  Material = "Aluminum" {
+    Bandgap(
+      EgRef = 0.0
+      EgX = 0.0
+      EgY = 0.0
+    )
+  }
+  
+  Interface = "Silicon" / "SiO2" {
+    Traps(
+      (
+        Donor
+        Conc = 1.0e10
+        Eenergy = 0.15
+        Esigma = 0.1
+        Hsigma = 1.0e-13
+        Esigma = 1.0e-13
+      )
+      (
+        Acceptor
+        Conc = 5.0e9
+        Eenergy = 0.25
+        Esigma = 0.1
+        Hsigma = 1.0e-13
+        Esigma = 1.0e-13
+      )
+    )
+  }
+}
